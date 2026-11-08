@@ -1,0 +1,16 @@
+npts 60 60 60                        # num.grid points in xyz
+gridfld m3.maps.fld                  # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N OA SA        # receptor atom types
+ligand_types A C HD OA N             # ligand atom types
+receptor m3.pdbqt                    # macromolecule
+gridcenter 143.318 142.401 140.848   # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map m3.A.map                         # atom-specific affinity map
+map m3.C.map                         # atom-specific affinity map
+map m3.HD.map                        # atom-specific affinity map
+map m3.OA.map                        # atom-specific affinity map
+map m3.N.map                         # atom-specific affinity map
+elecmap m3.e.map                     # electrostatic potential map
+dsolvmap m3.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
